@@ -11,9 +11,8 @@ Retorne o resultado da string.
 """
 
 def verbing(s):
-
     if len(s) > 3:
-        return f'{s+ "ing" if not "ing" in s[-3:] else s + "ly" }'
+        return f'{s + "ing" if not "ing" in s[-3:] else s + "ly" }'
     else:
         return s
 
