@@ -10,7 +10,7 @@ e donuts(23) retorna 'Number of donuts: many'
 """
 
 def donuts(count):
-    return 'Number of donuts: many' if count >= 10 else f'Number of donuts: {count}'
+    return f'Number of donuts: {"many" if count >= 10 else count}'
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
@@ -38,3 +38,4 @@ if __name__ == '__main__':
     test(donuts, 9, 'Number of donuts: 9')
     test(donuts, 10, 'Number of donuts: many')
     test(donuts, 99, 'Number of donuts: many')
+
